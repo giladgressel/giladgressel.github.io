@@ -5,19 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gilad Gressel</title>
   <meta name="description" content="Gilad Gressel is an AI security researcher studying how LLMs and AI agents are misused for fraud and cybercrime, and how to monitor and defend them.">
+  <meta name="color-scheme" content="light dark">
   <meta property="og:title" content="Gilad Gressel — AI Security Researcher">
   <meta property="og:description" content="LLM-enabled fraud, activation monitoring, and AI agent security. USENIX Security, ICLR, EMNLP, Black Hat USA.">
   <meta property="og:image" content="https://giladgressel.github.io/assets/headshot.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
 
 <nav>
   <div class="wrap">
-    <a class="name" href="#">Gilad Gressel</a>
+    <a class="home" href="#">Gilad Gressel</a>
     <ul>
       <li><a href="#news">News</a></li>
       <li><a href="#research">Research</a></li>
@@ -29,42 +30,50 @@
 
 <main class="wrap">
 
-  <header>
-    <img src="assets/headshot.jpg" alt="Gilad Gressel">
-    <div>
-      <h1>Gilad Gressel</h1>
-      <p class="role">AI Security Researcher</p>
-      <p class="affil">
-        PhD student, <a href="https://www.amrita.edu/center/amrita-center-for-cybersecurity-systems-and-networks/">Center for Cybersecurity Systems &amp; Networks</a>, Amrita Vishwa Vidyapeetham<br>
-        External PhD student, <a href="https://offensive-ai-lab.com/">Offensive AI Lab</a>, Ben-Gurion University of the Negev
-      </p>
-      <div class="links">
-        <a href="mailto:gilad.gressel@am.amrita.edu">Email</a>
-        <a href="https://scholar.google.com/citations?user=859INekAAAAJ&amp;hl=en">Google Scholar</a>
-        <a href="https://github.com/giladgressel">GitHub</a>
-        <a href="https://www.linkedin.com/in/giladgressel">LinkedIn</a>
+  <header class="masthead">
+    <div class="masthead-grid">
+      <div>
+        <span class="label">AI Security Researcher</span>
+        <h1>Gilad Gressel</h1>
+        <p class="thesis">I build methods to <em>monitor AI systems from the inside</em>, so they can be secured, trusted, and used responsibly.</p>
       </div>
-      <p class="seen">Work featured at <span>USENIX Security · ICLR · EMNLP · Black Hat USA · WIRED</span></p>
+      <div class="portrait"><img src="assets/headshot.jpg" alt="Gilad Gressel"></div>
     </div>
+
+    <dl class="meta-row">
+      <div>
+        <dt>PhD student</dt>
+        <dd><a href="https://www.amrita.edu/center/amrita-center-for-cybersecurity-systems-and-networks/">Center for Cybersecurity Systems &amp; Networks</a>, Amrita Vishwa Vidyapeetham. Advised by <a href="https://www.amrita.edu/faculty/krishnashree/">Krishnashree Achuthan</a>.</dd>
+      </div>
+      <div>
+        <dt>External PhD student</dt>
+        <dd><a href="https://offensive-ai-lab.com/">Offensive AI Lab</a>, Ben-Gurion University of the Negev. Advised by <a href="https://offensive-ai-lab.com/yisroel.mirsky/">Yisroel Mirsky</a>.</dd>
+      </div>
+      <div>
+        <dt>Contact</dt>
+        <dd class="links">
+          <a href="mailto:gilad.gressel@am.amrita.edu">Email</a>
+          <a href="https://scholar.google.com/citations?user=859INekAAAAJ&amp;hl=en">Google Scholar</a>
+          <a href="https://github.com/giladgressel">GitHub</a>
+          <a href="https://www.linkedin.com/in/giladgressel">LinkedIn</a>
+        </dd>
+      </div>
+    </dl>
+
+    <p class="ticker"><span class="label">Featured at</span><span>USENIX Security</span><span>ICLR</span><span>EMNLP</span><span>Black Hat USA</span><span>WIRED</span></p>
   </header>
 
-  <section class="bio" id="about">
-    <p>
-      I study how large language models and AI agents are misused for fraud, social engineering, and cybercrime, and how to monitor, attribute, and defend them. Much of my recent work reads a model's internal activations, rather than its output text, to see what it is doing and why.
-    </p>
-    <p>
-      My research has appeared at USENIX Security, ICLR, and EMNLP, received a USENIX Security Distinguished Paper runner-up award, and been covered by <a href="https://www.wired.com/story/ai-scammers-are-better-at-building-trust-than-humans/">WIRED</a>. I presented GAVEL at Black Hat USA 2026. I am advised by <a href="https://www.amrita.edu/faculty/krishnashree/">Krishnashree Achuthan</a> at Amrita and <a href="https://offensive-ai-lab.com/yisroel.mirsky/">Yisroel Mirsky</a> at Ben-Gurion University. I hold an M.S. in Computer Science from Georgia Tech and a B.A. in Linguistics from UC Santa Cruz.
-    </p>
-    <p class="also">
-      Alongside security, I work on responsible AI, with a focus on how LLMs behave across languages and cultures, and I support medical AI research with <a href="https://maitri-labs.ai">Maitri Labs</a>.
-    </p>
-    <p class="also">
-      I am open to research collaborations, speaking invitations, and consulting on AI security.
-    </p>
+  <section id="about">
+    <header><span class="label">01</span><h2>About</h2></header>
+    <div class="bio">
+      <p>I develop methods to monitor and secure large language models and AI agents, so that they can be deployed and used responsibly. Much of my work reads a model's internal activations, rather than its output text, to see what it is doing and why. I also study how these systems are misused in practice, from scam automation to AI-driven fraud, to understand what monitoring has to catch.</p>
+      <p>My research has appeared at USENIX Security, ICLR, and EMNLP, received a USENIX Security Distinguished Paper runner-up award, and been covered by <a href="https://www.wired.com/story/ai-scammers-are-better-at-building-trust-than-humans/">WIRED</a>. I presented GAVEL at Black Hat USA 2026. I hold an M.S. in Computer Science from Georgia Tech and a B.A. in Linguistics from UC Santa Cruz.</p>
+      <p class="quiet">Alongside security, I work on responsible AI, with a focus on how LLMs behave across languages and cultures, and I support medical AI research with <a href="https://maitri-labs.ai">Maitri Labs</a>. I am open to research collaborations, speaking invitations, and consulting on AI security.</p>
+    </div>
   </section>
 
   <section id="news">
-    <h2>News</h2>
+    <header><span class="label">02</span><h2>News</h2></header>
     <ul class="news">
       <li><time>2026</time><span><a href="https://offensive-ai-lab.com/prism/">PRISM</a> was accepted to the EMNLP 2026 main conference. I will present it there.</span></li>
       <li><time>Aug 2026</time><span><a href="https://www.usenix.org/conference/usenixsecurity26/presentation/gressel">Love, Lies, and Language Models</a> received a Distinguished Paper Award runner-up at USENIX Security 2026.</span></li>
@@ -77,54 +86,48 @@
   </section>
 
   <section id="research">
-    <h2>Selected Research</h2>
-    <div class="featured">
+    <header><span class="label">03</span><h2>Selected Research</h2></header>
+    <div>
 
-      <article class="card">
-        <figure class="fig dark"><img src="assets/research/love-lies.jpg" alt="Funnel diagram: one LLM runs thousands of friendly first contacts and tens of trust-building conversations, then hands about five victims to a human closer." loading="lazy"></figure>
-        <div class="badges">
-          <span class="badge venue">USENIX Security 2026</span>
-          <span class="badge award">Distinguished Paper Runner-up</span>
-          <span class="badge">WIRED</span>
-        </div>
-        <h4>Love, Lies, and Language Models: Investigating AI's Role in Romance-Baiting Scams</h4>
-        <p>Scam compounds already use LLMs to groom victims. In a seven-day blinded study, participants trusted an LLM agent more than a human operator, and 46% followed its final request, against 18% for the human. Current content filters caught none of the scam conversations.</p>
-        <div class="plinks">
-          <a href="https://www.usenix.org/system/files/usenixsecurity26-gressel.pdf">Paper</a>
-          <a href="https://offensive-ai-lab.com/love-lies/">Project</a>
-          <a href="https://github.com/Offensive-AI-Lab/love-lies">Code &amp; data</a>
-          <a href="https://www.wired.com/story/ai-scammers-are-better-at-building-trust-than-humans/">WIRED</a>
+      <article class="feature">
+        <figure class="dark"><img src="assets/research/love-lies.jpg" alt="Funnel diagram: one LLM runs thousands of friendly first contacts and tens of trust-building conversations, then hands about five victims to a human closer." loading="lazy"></figure>
+        <div>
+          <p class="kicker">USENIX Security 2026 · Distinguished Paper Runner-up · WIRED</p>
+          <h4><a href="https://www.usenix.org/system/files/usenixsecurity26-gressel.pdf">Love, Lies, and Language Models</a></h4>
+          <p>Scam compounds already use LLMs to groom victims. In a seven-day blinded study, participants trusted an LLM agent more than a human operator, and 46% followed its final request, against 18% for the human. Current content filters caught none of the scam conversations.</p>
+          <div class="more">
+            <a href="https://offensive-ai-lab.com/love-lies/">Project</a>
+            <a href="https://github.com/Offensive-AI-Lab/love-lies">Code &amp; data</a>
+            <a href="https://www.wired.com/story/ai-scammers-are-better-at-building-trust-than-humans/">WIRED</a>
+          </div>
         </div>
       </article>
 
-      <article class="card">
-        <figure class="fig light"><img src="assets/research/gavel.jpg" alt="GAVEL overview: community rule sets and concept datasets feed a model owner's rules, activation collection, a concept detector, and runtime rule-violation detection." loading="lazy"></figure>
-        <div class="badges">
-          <span class="badge venue">ICLR 2026</span>
-          <span class="badge award">Black Hat USA 2026</span>
-        </div>
-        <h4>GAVEL: Towards Rule-Based Safety through Activation Monitoring</h4>
-        <p>Safety rules written over a model's internal activations instead of its output text. Lightweight probes detect interpretable concepts, and logical rules combine them, so policies can be written, updated, and shared without retraining the model.</p>
-        <div class="plinks">
-          <a href="https://arxiv.org/abs/2601.19768">Paper</a>
-          <a href="https://offensive-ai-lab.com/research/gavel/">Project</a>
-          <a href="https://github.com/Offensive-AI-Lab/gavel-rules">Code</a>
-          <a href="https://blackhat.com/us-26/briefings/schedule/#rules-for-neural-traffic-a-new-defensive-layer-for-llms-53675">Black Hat talk</a>
+      <article class="feature">
+        <figure class="light"><img src="assets/research/gavel.jpg" alt="GAVEL overview: community rule sets and concept datasets feed a model owner's rules, activation collection, a concept detector, and runtime rule-violation detection." loading="lazy"></figure>
+        <div>
+          <p class="kicker">ICLR 2026 · Black Hat USA 2026</p>
+          <h4><a href="https://arxiv.org/abs/2601.19768">GAVEL: Rule-Based Safety through Activation Monitoring</a></h4>
+          <p>Safety rules written over a model's internal activations instead of its output text. Lightweight probes detect interpretable concepts, and logical rules combine them, so policies can be written, updated, and shared without retraining the model.</p>
+          <div class="more">
+            <a href="https://offensive-ai-lab.com/research/gavel/">Project</a>
+            <a href="https://github.com/Offensive-AI-Lab/gavel-rules">Code</a>
+            <a href="https://blackhat.com/us-26/briefings/schedule/#rules-for-neural-traffic-a-new-defensive-layer-for-llms-53675">Black Hat talk</a>
+          </div>
         </div>
       </article>
 
-      <article class="card">
-        <figure class="fig light"><img src="assets/research/prism.jpg" alt="PRISM architecture: activations from the frozen target model are projected into soft tokens and decoded into recovered instructions, trained with GRPO and an LLM judge." loading="lazy"></figure>
-        <div class="badges">
-          <span class="badge venue">EMNLP 2026</span>
-        </div>
-        <h4>PRISM: Recovering Instruction Sets from Language Model Activations</h4>
-        <p>PRISM reads the instructions steering a model directly from its activations, without seeing the prompt. Trained only on ordinary chat data, it caught 94.1% of the prompt injections the model acted on across three benchmarks.</p>
-        <div class="plinks">
-          <a href="https://arxiv.org/abs/2606.09563">Paper</a>
-          <a href="https://offensive-ai-lab.com/prism/">Project</a>
-          <a href="https://github.com/Offensive-AI-Lab/prism">Code</a>
-          <a href="https://huggingface.co/Offensive-AI-Lab/models">Models</a>
+      <article class="feature">
+        <figure class="light"><img src="assets/research/prism.jpg" alt="PRISM architecture: activations from the frozen target model are projected into soft tokens and decoded into recovered instructions, trained with GRPO and an LLM judge." loading="lazy"></figure>
+        <div>
+          <p class="kicker">EMNLP 2026</p>
+          <h4><a href="https://arxiv.org/abs/2606.09563">PRISM: Recovering Instruction Sets from Activations</a></h4>
+          <p>PRISM reads the instructions steering a model directly from its activations, without seeing the prompt. Trained only on ordinary chat data, it caught 94.1% of the prompt injections the model acted on across three benchmarks.</p>
+          <div class="more">
+            <a href="https://offensive-ai-lab.com/prism/">Project</a>
+            <a href="https://github.com/Offensive-AI-Lab/prism">Code</a>
+            <a href="https://huggingface.co/Offensive-AI-Lab/models">Models</a>
+          </div>
         </div>
       </article>
 
@@ -132,220 +135,222 @@
   </section>
 
   <section id="publications">
-    <h2>Publications</h2>
-    <p class="also">Full list on <a href="https://scholar.google.com/citations?user=859INekAAAAJ&amp;hl=en">Google Scholar</a>.</p>
-
-    <h3>AI Security</h3>
-    <ul class="pubs">
-      <li>
-        <div class="t">PRISM: Recovering Instruction Sets from Language Model Activations</div>
-        <div class="a"><b>G. Gressel</b>, R. Pankajakshan, J. Diament, E. Hudis, K. Achuthan, Y. Mirsky</div>
-        <div class="v">EMNLP 2026</div>
-        <div class="plinks"><a href="https://arxiv.org/abs/2606.09563">paper</a><a href="https://github.com/Offensive-AI-Lab/prism">code</a><a href="https://offensive-ai-lab.com/prism/">project</a></div>
-      </li>
-      <li>
-        <div class="t">Love, Lies, and Language Models: Investigating AI's Role in Romance-Baiting Scams</div>
-        <div class="a"><b>G. Gressel</b>, R. Pankajakshan, S. Rozenfeld, L. Li, I. Franceschini, K. Achuthan, Y. Mirsky</div>
-        <div class="v">USENIX Security 2026 <span class="badge award">Distinguished Paper Runner-up</span></div>
-        <div class="plinks"><a href="https://www.usenix.org/system/files/usenixsecurity26-gressel.pdf">paper</a><a href="https://github.com/Offensive-AI-Lab/love-lies">code</a><a href="https://offensive-ai-lab.com/love-lies/">project</a></div>
-      </li>
-      <li>
-        <div class="t">GAVEL: Towards Rule-Based Safety through Activation Monitoring</div>
-        <div class="a">S. Rozenfeld, R. Pankajakshan, I. Zloczower, E. Lenga, <b>G. Gressel</b>, Y. Mirsky</div>
-        <div class="v">ICLR 2026</div>
-        <div class="plinks"><a href="https://arxiv.org/abs/2601.19768">paper</a><a href="https://github.com/Offensive-AI-Lab/gavel-rules">code</a><a href="https://offensive-ai-lab.com/research/gavel/">project</a></div>
-      </li>
-      <li>
-        <div class="t">The Industrialization of Messaging Scams in the LLM Era</div>
-        <div class="a"><b>G. Gressel</b>, R. Pankajakshan, L. Li, I. Franceschini, K. Achuthan, Y. Mirsky</div>
-        <div class="v">ACM Workshop on Security Implications of Deepfakes and Cheapfakes (WDC) 2026</div>
-      </li>
-      <li>
-        <div class="t">Who Owns This Agent? Tracing AI Agents Back to Their Owners</div>
-        <div class="a">R. Chocron, D. J. B. Chayim, E. Lenga, <b>G. Gressel</b>, A. Oprea, Y. Mirsky</div>
-        <div class="v">arXiv 2026</div>
-        <div class="plinks"><a href="https://arxiv.org/abs/2605.16035">paper</a></div>
-      </li>
-      <li>
-        <div class="t">A Few Steps Further: Why Defenses Against Malicious Finetuning Erode Under Continued Training</div>
-        <div class="a">I. Zloczower, E. Lenga, <b>G. Gressel</b>, Y. Mirsky</div>
-        <div class="v">arXiv 2026</div>
-        <div class="plinks"><a href="https://arxiv.org/abs/2605.14605">paper</a></div>
-      </li>
-      <li>
-        <div class="t">ProxyPrints: From Database Breach to Spoof, A Plug-and-Play Defense for Biometric Systems</div>
-        <div class="a">Y. Hacmon, K. Gorelik, <b>G. Gressel</b>, Y. Mirsky</div>
-        <div class="v">ACSAC 2025</div>
-        <div class="plinks"><a href="https://arxiv.org/abs/2511.12739">paper</a></div>
-      </li>
-      <li>
-        <div class="t">ASRJam: Human-Friendly AI Speech Jamming to Prevent Automated Phone Scams</div>
-        <div class="a">F. Grabovski, <b>G. Gressel</b>, Y. Mirsky</div>
-        <div class="v">arXiv 2025</div>
-        <div class="plinks"><a href="https://arxiv.org/abs/2506.11125">paper</a></div>
-      </li>
-      <li>
-        <div class="t">Are You Human? An Adversarial Benchmark to Expose LLMs</div>
-        <div class="a"><b>G. Gressel</b>, R. Pankajakshan, Y. Mirsky</div>
-        <div class="v">arXiv 2024</div>
-        <div class="plinks"><a href="https://arxiv.org/abs/2410.09569">paper</a></div>
-      </li>
-      <li>
-        <div class="t">Discussion Paper: Exploiting LLMs for Scam Automation: A Looming Threat</div>
-        <div class="a"><b>G. Gressel</b>, R. Pankajakshan, Y. Mirsky</div>
-        <div class="v">ACM Workshop on Security Implications of Deepfakes and Cheapfakes (WDC) 2024 <span class="badge award">Best Paper</span></div>
-      </li>
-      <li>
-        <div class="t">Mapping LLM Security Landscapes: A Comprehensive Stakeholder Risk Assessment Proposal</div>
-        <div class="a">R. Pankajakshan, S. Biswal, Y. Govindarajulu, <b>G. Gressel</b></div>
-        <div class="v">arXiv 2024</div>
-        <div class="plinks"><a href="https://arxiv.org/abs/2403.13309">paper</a></div>
-      </li>
-    </ul>
-
-
-    <h3>Responsible AI</h3>
-    <ul class="pubs">
-      <li>
-        <div class="t">Lost in Translation? How Language Shapes Responsibility Attribution in Large Language Models</div>
-        <div class="a">P. P. M. Nair, <b>G. Gressel</b>, K. Achuthan</div>
-        <div class="v">C3NLP Workshop at ACL 2026 <span class="badge award">Best Paper</span></div>
-      </li>
-      <li>
-        <div class="t">"Sorry, Can't Help You": How Large Language Models Judge Failures to Help Across Languages</div>
-        <div class="a">P. P. M. Nair, <b>G. Gressel</b>, K. Achuthan</div>
-        <div class="v">C3NLP Workshop at ACL 2026</div>
-      </li>
-      <li>
-        <div class="t">RupeeBias: Auditing Demographic Bias in Indian Economic Guidance from Large Language Models</div>
-        <div class="a">P. P. M. Nair, B. Talaviya, S. Bhushan, R. Pankajakshan, S. Guruvadoo, et al.</div>
-        <div class="v">arXiv 2026</div>
-        <div class="plinks"><a href="https://arxiv.org/abs/2609.31245">paper</a></div>
-      </li>
-      <li>
-        <div class="t">To Solicit or Not to Solicit? Impact of AI Assistance Delivery Mechanisms on Decision-Making</div>
-        <div class="a">P. P. M. Nair, <b>G. Gressel</b>, M. N. Anand, K. Achuthan</div>
-        <div class="v">International Journal of Human–Computer Interaction 2026</div>
-      </li>
-    </ul>
-
-    <h3>Medical AI</h3>
-    <ul class="pubs">
-      <li>
-        <div class="t">Beyond In-Distribution Metrics: A Systematic Out-of-Distribution Evaluation of Congenital Heart Disease Segmentation</div>
-        <div class="a">A. Vijesh, S. Vasu, A. Ramesh, C. Pomeroy-Ward, H. A. Maya, S. Xavier, et al.</div>
-        <div class="v">arXiv 2026</div>
-        <div class="plinks"><a href="https://arxiv.org/abs/2609.17068">paper</a></div>
-      </li>
-      <li>
-        <div class="t">Automatic Endoscopic Ultrasound Station Recognition with Limited Data</div>
-        <div class="a">A. Ramesh, A. Nandanan, N. Boggavarapu, P. Nair, <b>G. Gressel</b></div>
-        <div class="v">arXiv 2023</div>
-        <div class="plinks"><a href="https://arxiv.org/abs/2309.11820">paper</a></div>
-      </li>
-      <li>
-        <div class="t">Artificial Intelligence in Endoscopy: More Than What Meets the Eye in Screening Colonoscopy and Endosonographic Evaluation of Pancreatic Lesions</div>
-        <div class="a">H. Rao, J. A. Trieu, P. Nair, <b>G. Gressel</b>, M. Venu, R. P. Venu</div>
-        <div class="v">Artificial Intelligence in Gastrointestinal Endoscopy 2022</div>
-      </li>
-    </ul>
-    <details class="earlier">
-      <summary>Earlier work: adversarial ML, phishing, and malware detection (2015–2023)</summary>
+    <header><span class="label">04</span><h2>Publications</h2></header>
+    <div>
+      <h3>AI Security</h3>
       <ul class="pubs">
         <li>
-          <div class="t">Minimum Selection Feature Importance Guided Attack</div>
-          <div class="a">R. Karumanchi, <b>G. Gressel</b></div>
-          <div class="v">IEEE World Conference on Applied Intelligence and Computing (AIC) 2023</div>
+          <time>2026</time>
+          <div>
+            <a class="t" href="https://arxiv.org/abs/2606.09563">PRISM: Recovering Instruction Sets from Language Model Activations</a>
+            <div class="a"><b>G. Gressel</b>, R. Pankajakshan, J. Diament, E. Hudis, K. Achuthan, Y. Mirsky</div>
+            <div class="x"><a href="https://github.com/Offensive-AI-Lab/prism">Code</a><a href="https://offensive-ai-lab.com/prism/">Project</a></div>
+          </div>
+          <div class="venue top">EMNLP 2026</div>
         </li>
         <li>
-          <div class="t">Extending Minimum Prediction Deviation as a Defence Against Adversarial Attacks</div>
-          <div class="a">S. Jois, <b>G. Gressel</b></div>
-          <div class="v">International Conference on Artificial-Business Analytics, Quantum and Machine Learning 2023</div>
+          <time>2026</time>
+          <div>
+            <a class="t" href="https://www.usenix.org/system/files/usenixsecurity26-gressel.pdf">Love, Lies, and Language Models: Investigating AI's Role in Romance-Baiting Scams</a>
+            <div class="a"><b>G. Gressel</b>, R. Pankajakshan, S. Rozenfeld, L. Li, I. Franceschini, K. Achuthan, Y. Mirsky</div>
+            <div class="x"><a href="https://github.com/Offensive-AI-Lab/love-lies">Code</a><a href="https://offensive-ai-lab.com/love-lies/">Project</a></div>
+          </div>
+          <div class="venue top">USENIX Security 2026<span class="award">Distinguished Paper Runner-up</span></div>
         </li>
         <li>
-          <div class="t">Towards a General Black-Box Attack on Tabular Datasets</div>
-          <div class="a">S. Pooja, <b>G. Gressel</b></div>
-          <div class="v">Advances in Distributed Computing and Machine Learning (ICADCML) 2023</div>
+          <time>2026</time>
+          <div>
+            <a class="t" href="https://arxiv.org/abs/2601.19768">GAVEL: Towards Rule-Based Safety through Activation Monitoring</a>
+            <div class="a">S. Rozenfeld, R. Pankajakshan, I. Zloczower, E. Lenga, <b>G. Gressel</b>, Y. Mirsky</div>
+            <div class="x"><a href="https://github.com/Offensive-AI-Lab/gavel-rules">Code</a><a href="https://offensive-ai-lab.com/research/gavel/">Project</a></div>
+          </div>
+          <div class="venue top">ICLR 2026</div>
         </li>
         <li>
-          <div class="t">Using Uncertainty as a Defense Against Adversarial Attacks for Tabular Datasets</div>
-          <div class="a">P. Santhosh, <b>G. Gressel</b>, M. C. Darling</div>
-          <div class="v">Australasian Joint Conference on Artificial Intelligence 2022</div>
+          <time>2026</time>
+          <div>
+            <span class="t">The Industrialization of Messaging Scams in the LLM Era</span>
+            <div class="a"><b>G. Gressel</b>, R. Pankajakshan, L. Li, I. Franceschini, K. Achuthan, Y. Mirsky</div>
+          </div>
+          <div class="venue">ACM WDC 2026</div>
         </li>
         <li>
-          <div class="t">Feature Importance Guided Attack: A Model Agnostic Adversarial Attack</div>
-          <div class="a"><b>G. Gressel</b>, N. Hegde, A. Sreekumar, R. Radhakrishnan, K. Harikumar, et al.</div>
-          <div class="v">arXiv 2021</div>
-          <div class="plinks"><a href="https://arxiv.org/abs/2106.14815">paper</a></div>
+          <time>2026</time>
+          <div>
+            <a class="t" href="https://arxiv.org/abs/2605.16035">Who Owns This Agent? Tracing AI Agents Back to Their Owners</a>
+            <div class="a">R. Chocron, D. J. B. Chayim, E. Lenga, <b>G. Gressel</b>, A. Oprea, Y. Mirsky</div>
+          </div>
+          <div class="venue">arXiv</div>
         </li>
         <li>
-          <div class="t">Concept Drift Detection Using Minimum Prediction Deviation</div>
-          <div class="a">M. G. Abirami, <b>G. Gressel</b></div>
-          <div class="v">Soft Computing and Signal Processing (ICSCSP) 2021</div>
+          <time>2026</time>
+          <div>
+            <a class="t" href="https://arxiv.org/abs/2605.14605">A Few Steps Further: Why Defenses Against Malicious Finetuning Erode Under Continued Training</a>
+            <div class="a">I. Zloczower, E. Lenga, <b>G. Gressel</b>, Y. Mirsky</div>
+          </div>
+          <div class="venue">arXiv</div>
         </li>
         <li>
-          <div class="t">Concept Drift Detection in Phishing Using Autoencoders</div>
-          <div class="a">A. G. Menon, <b>G. Gressel</b></div>
-          <div class="v">Symposium on Machine Learning and Metaheuristics Algorithms, and Applications 2020</div>
+          <time>2025</time>
+          <div>
+            <a class="t" href="https://arxiv.org/abs/2511.12739">ProxyPrints: From Database Breach to Spoof, A Plug-and-Play Defense for Biometric Systems</a>
+            <div class="a">Y. Hacmon, K. Gorelik, <b>G. Gressel</b>, Y. Mirsky</div>
+          </div>
+          <div class="venue top">ACSAC 2025</div>
         </li>
         <li>
-          <div class="t">Using DTrace for Machine Learning Solutions in Malware Detection</div>
-          <div class="a">A. M. K. P., S. Chandran, <b>G. Gressel</b>, T. U. Arjun, V. Pavithran</div>
-          <div class="v">ICCCNT 2020</div>
+          <time>2025</time>
+          <div>
+            <a class="t" href="https://arxiv.org/abs/2506.11125">ASRJam: Human-Friendly AI Speech Jamming to Prevent Automated Phone Scams</a>
+            <div class="a">F. Grabovski, <b>G. Gressel</b>, Y. Mirsky</div>
+          </div>
+          <div class="venue">arXiv</div>
         </li>
         <li>
-          <div class="t">Temporal Resilience of Phishing Detection Models in Machine Learning</div>
-          <div class="a">A. Abraham, <b>G. Gressel</b>, K. Achuthan</div>
-          <div class="v">International Conference on Cyber Security &amp; Privacy 2019</div>
+          <time>2024</time>
+          <div>
+            <a class="t" href="https://arxiv.org/abs/2410.09569">Are You Human? An Adversarial Benchmark to Expose LLMs</a>
+            <div class="a"><b>G. Gressel</b>, R. Pankajakshan, Y. Mirsky</div>
+          </div>
+          <div class="venue">arXiv</div>
         </li>
         <li>
-          <div class="t">Tuning the False Positive Rate / False Negative Rate with Phishing Detection Models</div>
-          <div class="a">S. Dalvi, <b>G. Gressel</b>, K. Achuthan</div>
-          <div class="v">International Journal of Engineering and Advanced Technology 2019</div>
+          <time>2024</time>
+          <div>
+            <span class="t">Discussion Paper: Exploiting LLMs for Scam Automation: A Looming Threat</span>
+            <div class="a"><b>G. Gressel</b>, R. Pankajakshan, Y. Mirsky</div>
+          </div>
+          <div class="venue">ACM WDC 2024<span class="award">Best Paper</span></div>
         </li>
         <li>
-          <div class="t">Feature Selection for Phishing Detection with Machine Learning</div>
-          <div class="a">A. Sundararajan, <b>G. Gressel</b>, K. Achuthan</div>
-          <div class="v">International Journal of Engineering and Advanced Technology 2019</div>
-        </li>
-        <li>
-          <div class="t">A Machine Learning Approach to SDL</div>
-          <div class="a">R. Kannavara, <b>G. Gressel</b>, D. Fagbemi, R. Chow</div>
-          <div class="v">IEEE Cybersecurity Development (SecDev) 2017</div>
-        </li>
-        <li>
-          <div class="t">A Lexical Approach for Classifying Malicious URLs</div>
-          <div class="a">M. Darling, <b>G. Gressel</b>, G. Heileman, A. Ashok, P. Poornachandran</div>
-          <div class="v">International Conference on High Performance Computing &amp; Simulation (HPCS) 2015</div>
+          <time>2024</time>
+          <div>
+            <a class="t" href="https://arxiv.org/abs/2403.13309">Mapping LLM Security Landscapes: A Comprehensive Stakeholder Risk Assessment Proposal</a>
+            <div class="a">R. Pankajakshan, S. Biswal, Y. Govindarajulu, <b>G. Gressel</b></div>
+          </div>
+          <div class="venue">arXiv</div>
         </li>
       </ul>
-    </details>
+
+      <h3>Responsible AI</h3>
+      <ul class="pubs">
+        <li>
+          <time>2026</time>
+          <div>
+            <span class="t">Lost in Translation? How Language Shapes Responsibility Attribution in Large Language Models</span>
+            <div class="a">P. P. M. Nair, <b>G. Gressel</b>, K. Achuthan</div>
+          </div>
+          <div class="venue">C3NLP @ ACL 2026<span class="award">Best Paper</span></div>
+        </li>
+        <li>
+          <time>2026</time>
+          <div>
+            <span class="t">"Sorry, Can't Help You": How Large Language Models Judge Failures to Help Across Languages</span>
+            <div class="a">P. P. M. Nair, <b>G. Gressel</b>, K. Achuthan</div>
+          </div>
+          <div class="venue">C3NLP @ ACL 2026</div>
+        </li>
+        <li>
+          <time>2026</time>
+          <div>
+            <a class="t" href="https://arxiv.org/abs/2609.31245">RupeeBias: Auditing Demographic Bias in Indian Economic Guidance from Large Language Models</a>
+            <div class="a">P. P. M. Nair, B. Talaviya, S. Bhushan, R. Pankajakshan, S. Guruvadoo, et al.</div>
+          </div>
+          <div class="venue">arXiv</div>
+        </li>
+        <li>
+          <time>2026</time>
+          <div>
+            <span class="t">To Solicit or Not to Solicit? Impact of AI Assistance Delivery Mechanisms on Decision-Making</span>
+            <div class="a">P. P. M. Nair, <b>G. Gressel</b>, M. N. Anand, K. Achuthan</div>
+          </div>
+          <div class="venue">IJHCI 2026</div>
+        </li>
+      </ul>
+
+      <h3>Medical AI</h3>
+      <ul class="pubs">
+        <li>
+          <time>2026</time>
+          <div>
+            <a class="t" href="https://arxiv.org/abs/2609.17068">Beyond In-Distribution Metrics: A Systematic Out-of-Distribution Evaluation of Congenital Heart Disease Segmentation</a>
+            <div class="a">A. Vijesh, S. Vasu, A. Ramesh, C. Pomeroy-Ward, H. A. Maya, S. Xavier, et al.</div>
+          </div>
+          <div class="venue">arXiv</div>
+        </li>
+        <li>
+          <time>2023</time>
+          <div>
+            <a class="t" href="https://arxiv.org/abs/2309.11820">Automatic Endoscopic Ultrasound Station Recognition with Limited Data</a>
+            <div class="a">A. Ramesh, A. Nandanan, N. Boggavarapu, P. Nair, <b>G. Gressel</b></div>
+          </div>
+          <div class="venue">arXiv</div>
+        </li>
+        <li>
+          <time>2022</time>
+          <div>
+            <span class="t">Artificial Intelligence in Endoscopy: More Than What Meets the Eye in Screening Colonoscopy and Endosonographic Evaluation of Pancreatic Lesions</span>
+            <div class="a">H. Rao, J. A. Trieu, P. Nair, <b>G. Gressel</b>, M. Venu, R. P. Venu</div>
+          </div>
+          <div class="venue">AI in GI Endoscopy 2022</div>
+        </li>
+      </ul>
+
+      <details class="earlier">
+        <summary>Earlier work: adversarial ML, phishing, and malware detection (2015–2023)</summary>
+        <ul class="pubs">
+          <li><time>2023</time><div><span class="t">Minimum Selection Feature Importance Guided Attack</span><div class="a">R. Karumanchi, <b>G. Gressel</b></div></div><div class="venue">IEEE AIC 2023</div></li>
+          <li><time>2023</time><div><span class="t">Extending Minimum Prediction Deviation as a Defence Against Adversarial Attacks</span><div class="a">S. Jois, <b>G. Gressel</b></div></div><div class="venue">Business Analytics, Quantum &amp; ML Conf. 2023</div></li>
+          <li><time>2023</time><div><span class="t">Towards a General Black-Box Attack on Tabular Datasets</span><div class="a">S. Pooja, <b>G. Gressel</b></div></div><div class="venue">ICADCML 2023</div></li>
+          <li><time>2022</time><div><span class="t">Using Uncertainty as a Defense Against Adversarial Attacks for Tabular Datasets</span><div class="a">P. Santhosh, <b>G. Gressel</b>, M. C. Darling</div></div><div class="venue">AJCAI 2022</div></li>
+          <li><time>2021</time><div><a class="t" href="https://arxiv.org/abs/2106.14815">Feature Importance Guided Attack: A Model Agnostic Adversarial Attack</a><div class="a"><b>G. Gressel</b>, N. Hegde, A. Sreekumar, R. Radhakrishnan, K. Harikumar, et al.</div></div><div class="venue">arXiv</div></li>
+          <li><time>2021</time><div><span class="t">Concept Drift Detection Using Minimum Prediction Deviation</span><div class="a">M. G. Abirami, <b>G. Gressel</b></div></div><div class="venue">ICSCSP 2021</div></li>
+          <li><time>2020</time><div><span class="t">Concept Drift Detection in Phishing Using Autoencoders</span><div class="a">A. G. Menon, <b>G. Gressel</b></div></div><div class="venue">SoMMA 2020</div></li>
+          <li><time>2020</time><div><span class="t">Using DTrace for Machine Learning Solutions in Malware Detection</span><div class="a">A. M. K. P., S. Chandran, <b>G. Gressel</b>, T. U. Arjun, V. Pavithran</div></div><div class="venue">ICCCNT 2020</div></li>
+          <li><time>2019</time><div><span class="t">Temporal Resilience of Phishing Detection Models in Machine Learning</span><div class="a">A. Abraham, <b>G. Gressel</b>, K. Achuthan</div></div><div class="venue">Cyber Security &amp; Privacy Conf. 2019</div></li>
+          <li><time>2019</time><div><span class="t">Tuning the False Positive Rate / False Negative Rate with Phishing Detection Models</span><div class="a">S. Dalvi, <b>G. Gressel</b>, K. Achuthan</div></div><div class="venue">IJEAT 2019</div></li>
+          <li><time>2019</time><div><span class="t">Feature Selection for Phishing Detection with Machine Learning</span><div class="a">A. Sundararajan, <b>G. Gressel</b>, K. Achuthan</div></div><div class="venue">IJEAT 2019</div></li>
+          <li><time>2017</time><div><span class="t">A Machine Learning Approach to SDL</span><div class="a">R. Kannavara, <b>G. Gressel</b>, D. Fagbemi, R. Chow</div></div><div class="venue">IEEE SecDev 2017</div></li>
+          <li><time>2015</time><div><span class="t">A Lexical Approach for Classifying Malicious URLs</span><div class="a">M. Darling, <b>G. Gressel</b>, G. Heileman, A. Ashok, P. Poornachandran</div></div><div class="venue">HPCS 2015</div></li>
+        </ul>
+      </details>
+    </div>
   </section>
 
   <section id="talks">
-    <h2>Talks &amp; Press</h2>
-    <h3>Talks</h3>
-    <ul class="plain">
-      <li><a href="https://blackhat.com/us-26/briefings/schedule/#rules-for-neural-traffic-a-new-defensive-layer-for-llms-53675">Rules for Neural Traffic: A New Defensive Layer for LLMs</a> <span class="meta">· Black Hat USA 2026</span></li>
-      <li><a href="https://www.usenix.org/conference/usenixsecurity26/presentation/gressel">Love, Lies, and Language Models</a> <span class="meta">· USENIX Security 2026</span></li>
-      <li><a href="https://seclab.stanford.edu/RealWorldAIsec/">GAVEL: Rule-Based Security over LLM Activations</a> <span class="meta">· Stanford Real World AI Security 2026</span></li>
-    </ul>
-    <h3>Press</h3>
-    <ul class="plain">
-      <li><a href="https://www.wired.com/story/ai-scammers-are-better-at-building-trust-than-humans/">AI Scammers Are Better at Building Trust Than Humans</a> <span class="meta">· WIRED, July 2026</span></li>
-      <li><a href="https://9to5mac.com/2026/07/30/ai-chatbots-are-now-better-than-humans-at-romance-scams-and-thats-scary/">AI chatbots are now better than humans at romance scams</a> <span class="meta">· 9to5Mac, July 2026</span></li>
-      <li><a href="https://www.scworld.com/brief/ai-chatbots-outperform-humans-in-building-trust-for-scams">AI chatbots outperform humans in building trust for scams</a> <span class="meta">· SC Media</span></li>
-      <li><a href="https://www.accountingtoday.com/news/study-finds-bots-2-5x-more-effective-scammers-than-humans">Study finds bots 2.5x more effective scammers than humans</a> <span class="meta">· Accounting Today</span></li>
-      <li><a href="https://www.helpnetsecurity.com/2025/12/29/llms-romance-baiting-scams-study/">LLMs and romance-baiting scams</a> <span class="meta">· Help Net Security, December 2025</span></li>
-      <li><a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/new-research-shows-how-ai-is-powering-romance-baiting-scams">New research shows how AI is powering romance-baiting scams</a> <span class="meta">· Bitdefender</span></li>
-      <li><a href="https://blog.knowbe4.com/ai-chatbots-outperform-humans-at-building-trust-in-scams">AI chatbots outperform humans at building trust in scams</a> <span class="meta">· KnowBe4</span></li>
-    </ul>
+    <header><span class="label">05</span><h2>Talks &amp; Press</h2></header>
+    <div class="columns">
+      <div>
+        <h3>Talks</h3>
+        <ul class="list">
+          <li><a href="https://blackhat.com/us-26/briefings/schedule/#rules-for-neural-traffic-a-new-defensive-layer-for-llms-53675">Rules for Neural Traffic: A New Defensive Layer for LLMs</a><span class="src">Black Hat USA 2026</span></li>
+          <li><a href="https://www.usenix.org/conference/usenixsecurity26/presentation/gressel">Love, Lies, and Language Models</a><span class="src">USENIX Security 2026</span></li>
+          <li><a href="https://seclab.stanford.edu/RealWorldAIsec/">GAVEL: Rule-Based Security over LLM Activations</a><span class="src">Stanford Real World AI Security 2026</span></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Press</h3>
+        <ul class="list">
+          <li><a href="https://www.wired.com/story/ai-scammers-are-better-at-building-trust-than-humans/">AI Scammers Are Better at Building Trust Than Humans</a><span class="src">WIRED · July 2026</span></li>
+          <li><a href="https://9to5mac.com/2026/07/30/ai-chatbots-are-now-better-than-humans-at-romance-scams-and-thats-scary/">AI chatbots are now better than humans at romance scams</a><span class="src">9to5Mac · July 2026</span></li>
+          <li><a href="https://www.scworld.com/brief/ai-chatbots-outperform-humans-in-building-trust-for-scams">AI chatbots outperform humans in building trust for scams</a><span class="src">SC Media</span></li>
+          <li><a href="https://www.accountingtoday.com/news/study-finds-bots-2-5x-more-effective-scammers-than-humans">Study finds bots 2.5x more effective scammers than humans</a><span class="src">Accounting Today</span></li>
+          <li><a href="https://www.helpnetsecurity.com/2025/12/29/llms-romance-baiting-scams-study/">LLMs and romance-baiting scams</a><span class="src">Help Net Security · December 2025</span></li>
+          <li><a href="https://www.bitdefender.com/en-us/blog/hotforsecurity/new-research-shows-how-ai-is-powering-romance-baiting-scams">New research shows how AI is powering romance-baiting scams</a><span class="src">Bitdefender</span></li>
+          <li><a href="https://blog.knowbe4.com/ai-chatbots-outperform-humans-at-building-trust-in-scams">AI chatbots outperform humans at building trust in scams</a><span class="src">KnowBe4</span></li>
+        </ul>
+      </div>
+    </div>
   </section>
 
-  <footer>
-    © 2026 Gilad Gressel · Last updated October 2026
-  </footer>
-
 </main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Gilad Gressel</span>
+    <span>Last updated October 2026</span>
+  </div>
+</footer>
+
 </body>
 </html>
