@@ -4,15 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gilad Gressel</title>
-  <meta name="description" content="Gilad Gressel is an AI security researcher studying how LLMs and AI agents are misused for fraud and cybercrime, and how to monitor and defend them.">
+  <meta name="description" content="Gilad Gressel is an AI security researcher building methods to monitor AI systems from the inside, so they can be secured, trusted, and used responsibly.">
   <meta name="color-scheme" content="light dark">
   <meta property="og:title" content="Gilad Gressel — AI Security Researcher">
-  <meta property="og:description" content="LLM-enabled fraud, activation monitoring, and AI agent security. USENIX Security, ICLR, EMNLP, Black Hat USA.">
-  <meta property="og:image" content="https://giladgressel.github.io/assets/headshot.jpg">
+  <meta property="og:description" content="Methods to monitor AI systems from the inside, so they can be secured, trusted, and used responsibly. USENIX Security, ICLR, EMNLP, Black Hat USA.">
+  <meta property="og:url" content="https://giladgressel.github.io/">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://giladgressel.github.io/assets/share-card.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Gilad Gressel, AI Security Researcher">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=12">
+  <link rel="stylesheet" href="style.css?v=13">
 </head>
 <body>
 
@@ -90,13 +96,13 @@
     <div>
 
       <article class="feature">
-        <figure class="dark"><img src="assets/research/love-lies.jpg" alt="Funnel diagram: one LLM runs thousands of friendly first contacts and tens of trust-building conversations, then hands about five victims to a human closer." loading="lazy"></figure>
+        <figure class="dark"><a href="https://offensive-ai-lab.com/love-lies/"><img src="assets/research/love-lies.jpg" alt="Funnel diagram: one LLM runs thousands of friendly first contacts and tens of trust-building conversations, then hands about five victims to a human closer." loading="lazy"></a></figure>
         <div>
           <p class="kicker">USENIX Security 2026 · Distinguished Paper Runner-up · WIRED</p>
-          <h4><a href="https://www.usenix.org/system/files/usenixsecurity26-gressel.pdf">Love, Lies, and Language Models</a></h4>
+          <h4><a href="https://offensive-ai-lab.com/love-lies/">Love, Lies, and Language Models</a></h4>
           <p>Scam compounds already use LLMs to groom victims. In a seven-day blinded study, participants trusted an LLM agent more than a human operator, and 46% followed its final request, against 18% for the human. Current content filters caught none of the scam conversations.</p>
           <div class="more">
-            <a href="https://offensive-ai-lab.com/love-lies/">Project</a>
+            <a href="https://www.usenix.org/system/files/usenixsecurity26-gressel.pdf">Paper</a>
             <a href="https://github.com/Offensive-AI-Lab/love-lies">Code &amp; data</a>
             <a href="https://www.wired.com/story/ai-scammers-are-better-at-building-trust-than-humans/">WIRED</a>
           </div>
@@ -104,13 +110,13 @@
       </article>
 
       <article class="feature">
-        <figure class="light"><img src="assets/research/gavel.jpg" alt="GAVEL overview: community rule sets and concept datasets feed a model owner's rules, activation collection, a concept detector, and runtime rule-violation detection." loading="lazy"></figure>
+        <figure class="light"><a href="https://offensive-ai-lab.com/research/gavel/"><img src="assets/research/gavel.jpg" alt="GAVEL overview: community rule sets and concept datasets feed a model owner's rules, activation collection, a concept detector, and runtime rule-violation detection." loading="lazy"></a></figure>
         <div>
           <p class="kicker">ICLR 2026 · Black Hat USA 2026</p>
-          <h4><a href="https://arxiv.org/abs/2601.19768">GAVEL: Rule-Based Safety through Activation Monitoring</a></h4>
+          <h4><a href="https://offensive-ai-lab.com/research/gavel/">GAVEL: Rule-Based Safety through Activation Monitoring</a></h4>
           <p>Safety rules written over a model's internal activations instead of its output text. Lightweight probes detect interpretable concepts, and logical rules combine them, so policies can be written, updated, and shared without retraining the model.</p>
           <div class="more">
-            <a href="https://offensive-ai-lab.com/research/gavel/">Project</a>
+            <a href="https://arxiv.org/abs/2601.19768">Paper</a>
             <a href="https://github.com/Offensive-AI-Lab/gavel-rules">Code</a>
             <a href="https://blackhat.com/us-26/briefings/schedule/#rules-for-neural-traffic-a-new-defensive-layer-for-llms-53675">Black Hat talk</a>
           </div>
@@ -118,13 +124,13 @@
       </article>
 
       <article class="feature">
-        <figure class="light"><img src="assets/research/prism.jpg" alt="PRISM architecture: activations from the frozen target model are projected into soft tokens and decoded into recovered instructions, trained with GRPO and an LLM judge." loading="lazy"></figure>
+        <figure class="light"><a href="https://offensive-ai-lab.com/prism/"><img src="assets/research/prism.jpg" alt="PRISM architecture: activations from the frozen target model are projected into soft tokens and decoded into recovered instructions, trained with GRPO and an LLM judge." loading="lazy"></a></figure>
         <div>
           <p class="kicker">EMNLP 2026</p>
-          <h4><a href="https://arxiv.org/abs/2606.09563">PRISM: Recovering Instruction Sets from Activations</a></h4>
+          <h4><a href="https://offensive-ai-lab.com/prism/">PRISM: Recovering Instruction Sets from Activations</a></h4>
           <p>PRISM reads the instructions steering a model directly from its activations, without seeing the prompt. Trained only on ordinary chat data, it caught 94.1% of the prompt injections the model acted on across three benchmarks.</p>
           <div class="more">
-            <a href="https://offensive-ai-lab.com/prism/">Project</a>
+            <a href="https://arxiv.org/abs/2606.09563">Paper</a>
             <a href="https://github.com/Offensive-AI-Lab/prism">Code</a>
             <a href="https://huggingface.co/Offensive-AI-Lab/models">Models</a>
           </div>

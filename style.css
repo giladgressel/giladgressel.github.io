@@ -130,6 +130,7 @@ h3:first-child { margin-top: 0; }
 .feature figure { margin: 0; background: var(--frame); border: 1px solid var(--rule); }
 .feature figure.dark { background: #000; }
 .feature figure.light { padding: 14px; }
+.feature figure a { display: block; }
 .feature img { display: block; width: 100%; max-width: 100%; height: auto; }
 .kicker { color: var(--accent); margin: 0 0 12px; line-height: 1.5; }
 .feature h4 { font-family: var(--sans); font-weight: 600; font-size: 1.45rem; line-height: 1.25; margin: 0 0 12px; letter-spacing: -0.02em; }
