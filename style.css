@@ -113,6 +113,7 @@ p { margin: 0 0 14px; }
 .year { color: var(--faint); font-size: 0.82rem; font-variant-numeric: tabular-nums; margin-right: 6px; }
 
 details { margin-top: 10px; }
+details.earlier { margin-top: 28px; }
 summary {
   cursor: pointer; color: var(--muted); font-size: 0.92rem; padding: 6px 0;
   list-style: none;
